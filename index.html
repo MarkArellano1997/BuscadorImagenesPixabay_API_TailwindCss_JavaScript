@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de imágenes Pixabay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <h1 class="text-center text-3xl pt-8 text-white font-bold uppercase">Buscador de imágenes Pixabay</h1>
+
+    <main class="max-w-lg mx-auto pt-8">
+        <form id="formulario">
+            <div class="">
+                <label for="termino" class="text-white block font-bold uppercase">Termino de búsqueda</label>
+                <input type="text" id="termino" class="w-full p-2 rounded mt-2" placeholder="Termino de búsqueda. Ejm:cafe o futbol">
+                <button type="submit" class="w-full bg-blue-200 mt-4 py-2 rounded font-bold uppercase">Buscar Imágenes</button>
+            </div>
+        </form>
+    </main>
+
+    <div id="resultado" class="container mx-auto flex flex-wrap mt-10"></div>
+    <div id="paginacion" class="container mx-auto flex flex-wrap"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
